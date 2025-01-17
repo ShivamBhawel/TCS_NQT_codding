@@ -53,6 +53,19 @@ int main() {
         }
     }
 
+
+    /*   int pairs = 0;
+
+      for(auto i : mp){
+
+            int key = i.second;
+            if(key%2 == 0){
+                pairs++;
+            }
+
+            cout<<i.first<<"-->"<<i.second<<" "<<endl;
+      }*/
+
     cout << "Number of pairs: " << pairs << endl;
 
     return 0;

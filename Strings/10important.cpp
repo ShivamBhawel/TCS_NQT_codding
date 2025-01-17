@@ -30,7 +30,7 @@ int main(){
      }if(gender == "Female"){
 
              totalfemel++;
-             totalgrad += grade;
+             totalgrad += int(grade);
      }
 
 

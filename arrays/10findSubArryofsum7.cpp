@@ -19,7 +19,7 @@ void solve(vector<int>& arr,int n , int target){
 
 
     if(cursum == target){
-      for(int j=0;j<=i;j++){
+      for(int j=0;j<=i;j++){ 
 
          cout<<arr[j]<<" ";
       }

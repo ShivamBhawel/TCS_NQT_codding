@@ -12,6 +12,54 @@ Input: boxes = "001011"
 Output: [11,8,5,4,3,4]
  */
 
+#include<iostream>
+#include<vector>
+#include<unordered_set>
+#include<cmath>
+
+using namespace std;
+int main(){
+
+      vector<int>  boxs = {0,0,1,0,1,1};
+      int n = boxs.size();
+      vector<int>v(n,0);
+      vector<int>ans;
+      unordered_set<int>st;
+      int res = 0;
+
+      for(int i=0;i<boxs.size();i++){
+
+         if(boxs[i] == 1){
+
+             st.insert(i);
+         }
+
+      }
+      for(int i=0;i<boxs.size();i++){
+
+           res = 0;
+           for(auto it : st){
+
+                 v[i]+= abs(i - it);
+                 res += abs(i-it);
+                 
+           }
+           ans.push_back(res);
+          
+           
+      }
+       
+    
+  for(auto val : v){
+    cout<<val<<" ";
+  }
+  cout<<endl;
+  for(auto i : ans){
+    cout<<i<<" ";
+  }
+
+}
+
 /*
 class Solution {
 public:
