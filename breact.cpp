@@ -1,5 +1,6 @@
- /* 
-         input s = "  (  )  )  (  (  )  (  ( "
+   /*       git push -u origin main
+
+          input s = "  (  )  )  (  (  )  (  ( "
         input loked = 1  0  0  0  1  1  1  1
 
         output false 
