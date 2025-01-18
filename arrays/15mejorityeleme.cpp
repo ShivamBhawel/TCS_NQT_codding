@@ -23,10 +23,11 @@ int main() {
     cout << "Element frequencies:\n";
     for (auto i : mp) {
 
-       if(i.second >= n/2){
+   int val = i.second;
+      // if(val >= n/2){
 
-             cout<<i.first<<" ";
-       }
+             cout<<i.first<<" --> "<<i.second<<endl;
+      // }
           
     }
 
